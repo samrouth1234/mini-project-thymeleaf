@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http:www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <th:block th:replace="~{fragment/mate}"></th:block>
+    <title layout:title-pattern="$CONTENT_TITLE -$LAYOUT_TITLE">Title</title>
+    <th:block th:replace="~{fragment/style}"></th:block>
+</head>
+<body>
+<!--Navbar-->
+<div th:replace="~{fragment/navbar}" ></div>
+<!--end Navbar-->
+<main layout:fragment="main-content">
+    <!--individual web page content-->
+</main>
+<!--start footer-->
+<div th:replace="~{fragment/footer}" ></div>
+<!--end footer-->
+<th:block th:replece="{fragment/script}"> </th:block>
+</body>
+</html>

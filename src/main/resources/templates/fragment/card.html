@@ -1,0 +1,53 @@
+<section>
+    <!--readonly (input index)-->
+    <a th:fragment="card-reandonly" href="#" class="text-decoration-none">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <img th:src="@{/resources/img/default/image-04.jpg}" alt="News Coffee" class="bd-placeholder-img card-img-top mb-0"/>
+                <div class="image" style="margin-top:-20px;display:flex">
+                    <div style="width: 40% ;height: 40%">
+                        <img th:src="@{/resources/img/default/placeholder.png}" class="rounded-circle w-50 h-50" alt="News Coffee">
+                    </div>
+                    <div style="width:50%;padding-top:20px;margin-left:-60px">
+                        <h6>Name</h6>
+                        <p>@name</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Full Name</h5>
+                    <p>Categories</p>
+                    <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </a>
+    <!--end readonly -->
+    <!--card action (input article)-->
+    <div th:fragment="card-action" class="card shadow-sm">
+        <img th:src="@{/resources/img/default/image-04.jpg}" alt="News Coffee" class="bd-placeholder-img card-img-top mb-0"/>        <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+            </div>
+        </div>
+    </div>
+    <!--end card action-->
+    <!--static image -->
+    <div th:fragment="card-static" class="static">
+        <img th:src="@{/resources/img/default/spring-boot.jpg}" alt="News Coffee" class="bd-placeholder-img card-img-top mb-0"/>        <div class="card-body">
+        <h1 style="margin:10px 10px 10px 0px">ResArticle</h1>
+        <p>This is a wider card with supporting text below as a natural lead-in to additional</p>
+        <hr>
+        <h2> Popular Categories </h2>
+        <button type="button" class="btn btn-primary w-75 p-3 mt-3">Education</button>
+        <button type="button" class="btn btn-primary w-75 p-3 mt-3">Sport</button>
+        <button type="button" class="btn btn-primary w-75 p-3 mt-3">Biology</button>
+        <button type="button" class="btn btn-primary w-75 p-3 mt-3">Science</button>
+        <button type="button" class="btn btn-primary w-75 p-3 mt-3">Other</button>
+    </div>
+    <!--end static-->
+</section>
